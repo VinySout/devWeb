@@ -18,7 +18,7 @@
                 <tr>
                 <tr>
                     <td><label>Descrição do projeto:</label></td>
-                    <td><input id="addDescricao" class="" type="text" name="descricao" placeholder="Descrição do projeto"/></td>
+                    <td><textarea id="addDescricao" class="" type="text" name="descricao" placeholder="Descrição do projeto"></textarea></td>
                 </tr>
                 <tr>
                     <td><label>Gestor do projeto:</label></td>
@@ -37,12 +37,13 @@
                     <td><input id="addDataFim" class="" type="date" name="dataFim"/></td>
                 </tr>
                 <tr>
-                    <td><input class="" type="submit" value="Salvar" /></td>
+                    <td><input class="botaosalvar" type="submit" value="Salvar" ></button></td>
                 </tr>
             </table>
         </form>
     </div>
     <div id="editForm">
+        <h3>Editar</h3>
         <form action="javascript:void(0);" method="POST" id="saveEdit">
             <table>
                 <tr>
@@ -78,10 +79,13 @@
             </table>
         </form>
     </div>
+    
+    <div class = "tabelaProjetos">
     <table>
         <tbody id="projetos">
         </tbody>
     </table>
+    </div>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

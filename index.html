@@ -9,7 +9,11 @@
 </head>
 <body>
     <h1>Gestão de Projetos</h1>
+    <button onclick="mostrarPrimeiroFormulario()" >
+        Novo Projeto
+    </button>
     <div id="addForm">
+        <h3>Adicionar novo projeto</h3>
         <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
             <table>
                 <tr>
@@ -37,7 +41,7 @@
                     <td><input id="addDataFim" name="dataFim" type="text" class="campo" maxlength="10" placeholder="DD/MM/YYYY" required pattern="\d{2}\/\d{2}\/\d{4}">
                 </tr>
                 <tr>
-                    <td><input class="botaosalvar" type="submit" value="Salvar" required></button></td>
+                    <td><input class="botaosalvar" type="submit" value="Salvar" onclick="ocultarPrimeiroFormulario()"/></td>
                 </tr>
             </table>
         </form>
@@ -80,11 +84,11 @@
         </form>
     </div>
     
-    <div class = "tabelaProjetos">
-    <table>
-        <tbody id="projetos">
-        </tbody>
-    </table>
+    <div id="tabelaProjetos">
+        <table>
+            <tbody id="projetos">
+            </tbody>
+        </table>
     </div>
     <script type="text/javascript" src="script.js"></script>
 </body>

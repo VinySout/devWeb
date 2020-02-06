@@ -7,20 +7,20 @@
 }
 
 #addForm{
-    
+    display: none;
     background-color: white;
     border-radius: 5px;
     padding: 5px;
     box-shadow: 1px 1px 1px #999;
 }
 
-.tabelaProjetos{
+#tabelaProjetos{
+    margin-top: 10px;
+    display: none;
     background-color: white;
     border-radius: 5px;
     padding: 5px;
     box-shadow: 1px 1px 1px #999;
-    
-
 }
 h1{
     text-align: justify;

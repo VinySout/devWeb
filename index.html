@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gestão de Projetos</title>
+</head>
+<body>
+    <h1>Gestão de Projetos</h1>
+    <div id="addForm">
+        <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
+            <table>
+                <tr>
+                    <td><label>Nome do projeto:</label></td>
+                    <td><input id="addNome" class="" type="text" name="nomeProjeto" placeholder="Nome do projeto"/></td>
+                <tr>
+                <tr>
+                    <td><label>Descrição do projeto:</label></td>
+                    <td><input id="addDescricao" class="" type="text" name="descricao" placeholder="Descrição do projeto"/></td>
+                </tr>
+                <tr>
+                    <td><label>Gestor do projeto:</label></td>
+                    <td><input id="addNomeGestor" class="" type="nomeGestor" placeholder="Gestor do projeto"/></td>
+                </tr>
+                <tr>
+                    <td><label>Equipe do Projeto:</label></td>
+                    <td><input id="addEquipe" class="" type="text" name="equipeProjeto" placeholder="Equipe do Projeto"/></td>
+                </tr>
+                <tr>
+                    <td><label>Data Início:</label></td>
+                    <td><input id="addDataInicio" class="" type="date" name="dataInicio"/></td>
+                </tr>
+                <tr>
+                    <td><label>Data Fim:</label></td>
+                    <td><input id="addDataFim" class="" type="date" name="dataFim"/></td>
+                </tr>
+                <tr>
+                    <td><input class="" type="submit" value="Salvar" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="editForm">
+        <form action="javascript:void(0);" method="POST" id="saveEdit">
+            <table>
+                <tr>
+                    <td><label>Nome do projeto:</label></td>
+                    <td><input id="editNome" class="" type="text" name="nomeProjeto" placeholder="Nome do projeto"/></td>
+                <tr>
+                <tr>
+                    <td><label>Descrição do projeto:</label></td>
+                    <td><input id="editDescricao" class="" type="text" name="descricao" placeholder="Descrição do projeto"/></td>
+                </tr>
+                <tr>
+                    <td><label>Gestor do projeto:</label></td>
+                    <td><input id="editNomeGestor" class="" type="nomeGestor" placeholder="Gestor do projeto"/></td>
+                </tr>
+                <tr>
+                    <td><label>Equipe do Projeto:</label></td>
+                    <td><input id="editEquipe" class="" type="text" name="equipeProjeto" placeholder="Equipe do Projeto"/></td>
+                </tr>
+                <tr>
+                    <td><label>Data Início:</label></td>
+                    <td><input id="editDataInicio" class="" type="date" name="dataInicio"/></td>
+                </tr>
+                <tr>
+                    <td><label>Data Fim:</label></td>
+                    <td><input id="editDataFim" class="" type="date" name="dataFim"/></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="Cancelar" onclick="CloseInput()"/> 
+                        <input class="" type="submit" value="Salvar" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <table>
+        <tbody id="projetos">
+        </tbody>
+    </table>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

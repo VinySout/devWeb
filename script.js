@@ -121,6 +121,25 @@ function ocultarPrimeiroFormulario(){
     let addDataInicio  = document.getElementById("addDataInicio").value;
     let addDataFim  = document.getElementById("addDataFim").value;
 
+    if(nome.length > 30 || nome.length < 4) {
+        alert("O nome do Projeto tem que ter entre 4 e 30 caracteres");
+    }
+    if(addDescricao.length > 200 || addDescricao.length < 20) {
+        alert("A descricão tem que ter entre 20 e 200 caracteres");
+    }
+    if(addNomeGestor.length > 30 || addNomeGestor.length < 4) {
+        alert("O Nome do Gestor tem que ter entre 4 e 30 caracteres");
+    }
+    if(addEquipe.length > 30 || addEquipe.length < 4) {
+        alert("O nome da Equipe tem que ter entre 4 e 30 caracteres");
+    }
+    if(addDataInicio.length > 10 || addDataInicio.length < 9) {
+        alert("A data inicial tem que está no padrão DD/MM/YYYY");
+    }
+    if(addDataFim.length > 10 || addDataFim.length < 9) {
+        alert("A data final tem que está no padrão DD/MM/YYYY");
+    }
+
     if( nome && addDescricao && addNomeGestor && 
         addEquipe && addDataInicio && addDataFim){
         document.getElementById('addForm').style.display = 'none';

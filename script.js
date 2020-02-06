@@ -75,6 +75,7 @@ var app = new function () {
 
         document.getElementById('editForm').style.display = 'block';
         self = this;
+        document.getElementById('addForm').style.display = 'none';
 
         document.getElementById('saveEdit').onsubmit = function () {
             
@@ -105,3 +106,14 @@ app.FetchAll();
 function CloseInput() {
     document.getElementById('editForm').style.display = 'none';
 }
+
+function mostrarPrimeiroFormulario() {
+    document.getElementById('addForm').style.display = 'block';
+    document.getElementById('editForm').style.display = 'none';
+}
+
+function ocultarPrimeiroFormulario(){
+    document.getElementById('addForm').style.display = 'none';
+    document.getElementById('tabelaProjetos').style.display= 'block';
+}
+

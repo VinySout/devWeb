@@ -22,7 +22,7 @@
                 <tr>
                 <tr>
                     <td><label>Descrição do projeto:</label></td>
-                    <td><textarea id="addDescricao" type="text" maxlength="30" minlength="4" name="descricao" placeholder="Descrição do projeto" required></textarea></td>
+                    <td><textarea id="addDescricao" class="" type="text" maxlength="200" minlength="20" name="descricao" placeholder="Descrição do projeto" required></textarea></td>
                 </tr>
                 <tr>
                     <td><label>Gestor do projeto:</label></td>
@@ -34,11 +34,11 @@
                 </tr>
                 <tr>
                     <td><label>Data Início:</label></td>
-                    <td><input id="addDataInicio" type="date" name="dataInicio" required/></td>
+                    <td><input id="addDataInicio" name="dataInicio" type="text" class="campo" maxlength="10" placeholder="DD/MM/YYYY" required pattern="\d{2}\/\d{2}\/\d{4}"></tr></td>
                 </tr>
                 <tr>
                     <td><label>Data Fim:</label></td>
-                    <td><input id="addDataFim" type="date" name="dataFim" required/></td>
+                    <td><input id="addDataFim" name="dataFim" type="text" class="campo" maxlength="10" placeholder="DD/MM/YYYY" required pattern="\d{2}\/\d{2}\/\d{4}">
                 </tr>
                 <tr>
                     <td><input class="botaosalvar" type="submit" value="Salvar" onclick="ocultarPrimeiroFormulario()"/></td>

@@ -113,7 +113,19 @@ function mostrarPrimeiroFormulario() {
 }
 
 function ocultarPrimeiroFormulario(){
-    document.getElementById('addForm').style.display = 'none';
-    document.getElementById('tabelaProjetos').style.display= 'block';
+
+    let nome = document.getElementById("addNome").value;
+    let addDescricao = document.getElementById("addDescricao").value;
+    let addNomeGestor = document.getElementById("addNomeGestor").value;
+    let addEquipe  = document.getElementById("addEquipe").value;
+    let addDataInicio  = document.getElementById("addDataInicio").value;
+    let addDataFim  = document.getElementById("addDataFim").value;
+
+    if( nome && addDescricao && addNomeGestor && 
+        addEquipe && addDataInicio && addDataFim){
+        document.getElementById('addForm').style.display = 'none';
+        document.getElementById('tabelaProjetos').style.display= 'block';
+    }
+    
 }
 

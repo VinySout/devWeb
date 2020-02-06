@@ -121,23 +121,33 @@ function ocultarPrimeiroFormulario(){
     let addDataInicio  = document.getElementById("addDataInicio").value;
     let addDataFim  = document.getElementById("addDataFim").value;
 
+    var patternData = /^[0-9]{2}\/[0-9]{2}\/[0-9]{4}$/;
+
     if(nome.length > 30 || nome.length < 4) {
         alert("O nome do Projeto tem que ter entre 4 e 30 caracteres");
+        nome = false;
     }
     if(addDescricao.length > 200 || addDescricao.length < 20) {
         alert("A descricão tem que ter entre 20 e 200 caracteres");
+        addDescricao = false;
     }
     if(addNomeGestor.length > 30 || addNomeGestor.length < 4) {
         alert("O Nome do Gestor tem que ter entre 4 e 30 caracteres");
+        addNomeGestor = false;
     }
     if(addEquipe.length > 30 || addEquipe.length < 4) {
         alert("O nome da Equipe tem que ter entre 4 e 30 caracteres");
+        addEquipe = false;
     }
-    if(addDataInicio.length > 10 || addDataInicio.length < 9) {
+    if(addDataInicio.length > 10 || addDataInicio.length < 9 || !patternData.test(addDataInicio)) {
+        console.log(addDataInicio);
         alert("A data inicial tem que está no padrão DD/MM/YYYY");
+        addDataInicio = false;
     }
-    if(addDataFim.length > 10 || addDataFim.length < 9) {
+    if(addDataFim.length > 10 || addDataFim.length < 9 || !patternData.test(addDataFim)) {
+        console.log(addDataFim);
         alert("A data final tem que está no padrão DD/MM/YYYY");
+        addDataFim = false;
     }
 
     if( nome && addDescricao && addNomeGestor && 

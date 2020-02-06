@@ -44,6 +44,6 @@
 
 <h4>VALIDADORES:</h4>
 <ul>
-<li> Os projetos ao serem excluídas deve ser exibido uma mensagem de confirmação de exclusão de projeto.
+<li> Os projetos ao serem excluídos deve ser exibido uma mensagem de confirmação de exclusão de projeto.
 <li> O projeto deve ser excluído corretamente e as informações da tabela devem ser atualizadas.
 </ul>
